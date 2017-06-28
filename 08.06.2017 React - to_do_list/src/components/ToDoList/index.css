@@ -1,0 +1,8 @@
+.TodoItem-completed {
+	text-decoration: line-through;
+}
+
+li {
+	list-style:none;
+	margin-top: 10px;
+}
