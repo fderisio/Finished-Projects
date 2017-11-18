@@ -14,9 +14,9 @@
 	A page with 9 products that can be chosen and added to the cart, calculating the total amount to be paid
 - [Blitz](blitz) - React, Redux, JavaScript, HTML, CSS (June 2017) <br/>
 	Similar to a Twitter web app, where the user can post a tweet, see other users and their tweets. <br/>	
-	Finished features:
-	  - Log in
-	  - Fetch dashboard with recent tweets
-	  - Post a new tweet
-	  - Log out
+Finished features:
+    - Log in
+    - Fetch dashboard with recent tweets
+    - Post a new tweet
+    - Log out
 
