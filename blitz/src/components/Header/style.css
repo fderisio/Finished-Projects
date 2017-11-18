@@ -1,0 +1,14 @@
+.Header {
+  background-color: white; /*#0EEDAE;*/
+  height: 50px;
+  padding: 20px;
+  color: white; /*#F87254;*/
+}
+
+.MenuButton {
+  text-align: left;
+}
+
+.Welcome-logo {
+  height: 40px;
+}
