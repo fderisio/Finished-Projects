@@ -1,9 +1,9 @@
 # Finished-Projects
 
-- [Pong Game](Pong) - April 2017
-	JavaScript, HTML, CSS
+- [Pong Game](pong_game) - April 2017<br/>
+	JavaScript, HTML, CSS<br/>
 	The classic Pong game
-- [Bank App](Bank) - May 2017
+- [Bank App](bank_app) - May 2017
 	Java
 	Bank App where you can create an User, deposit and withdraw money
 - [To Do List](to_do_list) - June 2017
