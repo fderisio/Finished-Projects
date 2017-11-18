@@ -1,9 +1,8 @@
 # Finished-Projects
 - [Magic 8 Ball](magic_8_ball) - JavaScript, HTML, CSS (December 2016) <br/>
   	![Magic 8 Ball game](https://github.com/fderisio/Finished-Projects/blob/master/magic_8_ball/Pic.PNG)
-  	Please visit this [link](https://en.wikipedia.org/wiki/Magic_8-Ball) for more info <br/>
 - [Rock, Paper, Scissors](rock_paper_scissors) - JavaScript, HTML, CSS (December 2016) <br/>
-  	The classic "rock, papper, scissors" game, with a score counter and a players name input <br/>
+  	The classic "Rock, Paper, Scissors" game, with a score counter and a players name input <br/>
   	![Rock, Paper, Scissors game](https://github.com/fderisio/Finished-Projects/blob/master/rock_paper_scissors/Pic.PNG) 
 - [Pong Game](pong_game) - JavaScript, HTML, CSS (April 2017) <br/>
   	The classic Pong game
