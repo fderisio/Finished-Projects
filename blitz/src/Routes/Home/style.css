@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.Body {
+	text-align: center;
+	margin: 2px auto;
+  	width: 30%;
+}
+
+.Card {
+	border-color: red;
+}
