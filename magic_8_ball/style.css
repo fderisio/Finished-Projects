@@ -1,0 +1,46 @@
+body {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  padding: 2em;
+  background-color: white;
+  text-align: center;
+}
+
+h1 {
+  border-top-width: 1px;
+  font-size: 2.5em;
+}
+
+img {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.respuesta {
+  margin: 1em 0;
+  font-size: 1.8em;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.get-answer-button {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.75em 2.25em;
+  background-color: #85FFA0; 
+  opacity: 0.9;
+  width: 12em;
+  color: black;
+}
+
+.get-answer-button:hover {
+  background: #FFD6B7;
+  color: #FF002D;
+}
+
+.get-answer-button a {
+    position: relative;
+}
+.get-answer-button a:active {
+    top: 2px;
+}

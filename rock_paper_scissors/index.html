@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+	<link rel='stylesheet' href='style.css'/>
+</head>
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <hr>
+    <h2>Choose yours:</h2>
+    <p id="userChoice"></p>
+    <div class="elementos">
+    <img class="item" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaRvv6l6fUDUVNUSaVKC7t6I_oCE5cSQ6sEKJHCzu-XLf53d4M2w">
+    <input type="radio" name="element" class="items" id="piedra" value="piedra"><label>Rock</label><br>
+    <img class="item" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSy8pHsk8Wg76uC-NEftbgFda4H0rV6yI9h-FkvxEjdnIt_iUaj">
+    <input type="radio" name="element" class="items" id="papel" value="papel"><label>Paper</label><br>
+    <img class="item" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvSU3MAPyEz6Te9FqtBeV02kpiFDt_TlcvklSNC3caPeSX7497">
+    <!--Another scisscors drawing
+    http://www.iconsdb.com/icons/preview/orange/barber-scissors-xxl.png"-->
+    <input type="radio" name="element" class="items" id="tijera" value="tijera"><label>Scissors</label><br>
+    </div>
+    
+    </br><h3 id="computerText">The computer is thinking...</h3>
+    <div class="eleccionPC"></div></br>
+    
+    <div class="resultado"></div>
+    <div class="playAgainButton">Play Again</div>
+    <hr>
+    
+    <h2 class="score">Score</h2>
+    <div class="tabla">
+    <p class="titles" id="userName"></p><div id="userScore" value="0"></div>
+    <p class="titles">Computer:</p><div id="computerScore" value="0"></div>
+    </div>
+    
+    <p id = 'footer'>&copy;2017 Coded by fiore.drb</p>
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>

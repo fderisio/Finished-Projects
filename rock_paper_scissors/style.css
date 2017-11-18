@@ -1,0 +1,134 @@
+*{
+ font-family: Courgette, "Book Antiqua", Palatino, serif;
+}
+
+body {
+  font-family: Courgette;
+  padding: 2em;
+  background-color: white;
+  text-align: center;
+}
+
+h1 { 
+  font-family: Courgette; 
+  border-top-width: 1px;
+  font-size: 3em;
+}
+
+.elementos {
+    font-family: Courgette, "Book Antiqua", Palatino, serif;
+    column-count: 3;
+    column-gap: 70px;
+    font-size: 22px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 0px auto;
+    width: 22em;
+    float: center;
+}
+
+input[type=radio]:checked + label {
+   font-weight: bold;
+}
+
+img.item {
+    margin: 5px auto;
+    width: 80px; height: 80px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    float: center;
+}
+
+.items {
+    width: 5em;   
+}
+
+label {
+    text-align: center;    
+}
+
+img.symbol{
+    margin: 0px auto;
+    width: 60px; height:60px;
+}
+
+#computerText{
+    margin: 50px 0px 10px 0px;
+    font-size: 22px;
+}
+
+.eleccionPC{
+    font-size: 22px;
+}
+
+.resultado {
+    font-weight: bold;
+    font-size: 2em;
+    padding: 30px 30px;
+    /*color: 33B2A8;*/
+}
+
+.playAgainButton {
+    font-family: Courgette;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.3em; 
+    padding: 0.50em 0.50em;
+    opacity: 0.9;
+    width: 6em;
+    color: black;
+    background: #E8D4AF;
+    border-radius: 25px;
+    border: 2px solid black;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: initial;
+}
+
+.playAgainButton:hover {
+    background: black;
+    color: white;
+}
+
+input:hover {
+  border: 2px solid #2c4358;
+}
+
+.tabla {
+  column-count: 2;
+  font-size: 16px;
+  column-gap: 10px;
+  padding: 0.1em 12em 0.1em 12em;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+.active {
+  background-color: #333333;
+  color: whitesmoke;
+}
+
+#footer{
+    font-size: 0.75em;
+    margin: 50px 0px 0px 0px;
+    font-family:"Book Antiqua", Palatino, serif;
+}
