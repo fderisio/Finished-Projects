@@ -59,7 +59,7 @@ function calculate(operator) {
     nums.push(parseFloat(onScreen), operator)
     onScreen = [];
   }
-  console.log(nums)
+
   // result calculation
   if (operator === "equals") {
     nums.push(parseFloat(onScreen))
