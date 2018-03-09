@@ -9,8 +9,8 @@
     <input id="screen" readonly value="0" maxlength="10"></br>
     <button class="btn" OnClick="erase()">C</button>
     <button class="btn" value="-" OnClick="abso()">±</button>
-    <button class="btn extra" value="square" OnClick="calculate(value)">x²</button>
-    <button class="btn extra" value="root" OnClick="calculate(value)">²√</button></br>
+    <button class="btn extra" value="square" OnClick="square()">x²</button>
+    <button class="btn extra" value="root" OnClick="squareRoot()">²√</button></br>
     <button class="btn" value="7" OnClick="show(value)">7</button>
     <button class="btn" value="8" OnClick="show(value)">8</button>
     <button class="btn" value="9" OnClick="show(value)">9</button>
@@ -24,7 +24,7 @@
     <button class="btn" value="3" OnClick="show(value)">3</button>
     <button class="btn sign" value="minus" OnClick="calculate(value)">-</button></br>
     <button class="btn" value="0" OnClick="show(value)">0</button>
-    <button class="btn" value="." OnClick="show(value)">.</button>
+    <button class="btn" value="." OnClick="addComma()">.</button>
     <button class="btn" id="equals" value="equals" OnClick="calculate(value)">=</button>
     <button class="btn sign" value="plus" OnClick="calculate(value)">+</button>
   <div>
