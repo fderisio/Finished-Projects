@@ -13,11 +13,13 @@ function show(num) {
   }
 
   // add or remove commas
-  if (num === "." && num === onScreen[onScreen.length-1] ||
-    num === "." && onScreen.toString().indexOf(".") >= 0) {
+  if (num === "." && onScreen.indexOf(".") < 0) {
+    onScreen.push(num);
+    $('#screen').val(onScreen.join(''));
+  } else if (num === "." && onScreen.indexOf(".") === -1) {
     $('#screen').val(onScreen.join(''));
   } else if (num === "." && onScreen.length === 0) {
-    onScreen.push(0,num);
+    onScreen.push(0, num);
     $('#screen').val(onScreen.join(''));
   }
 
@@ -46,19 +48,21 @@ function calculate(operator) {
       break;
   }
 
-	// when pressing sign after sign
-  if (operator !== "equals" && typeof nums[nums.length-1] === 'string') {
+  onScreen = onScreen.join(''); 
+
+  // when pressing sign after sign
+  if (operator !== "equals" && typeof nums[nums.length-1] === 'string' && typeof onScreen == 'number') {
     nums.pop();
     nums.push(operator);
   } else if (operator !== "equals" && nums.length >= 0) {
-    $('#screen').val(onScreen.join(''));
-    nums.push(parseFloat(onScreen.join('')), operator)
+    $('#screen').val(onScreen);
+    nums.push(parseFloat(onScreen), operator)
     onScreen = [];
   }
-
+  console.log(nums)
   // result calculation
   if (operator === "equals") {
-    nums.push(parseFloat(onScreen.join('')))
+    nums.push(parseFloat(onScreen))
     result = nums[0];
     nums.forEach(function(number, i) {
       if (number === "+") {
@@ -87,7 +91,7 @@ function calculate(operator) {
     $('#screen').val(result);
     onScreen = [result];
     nums = [];
-    result = 0;
+    result = 0; 
   }
 
   if (operator === "sqrroot") {
