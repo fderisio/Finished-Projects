@@ -20,4 +20,4 @@ Finished features:
     - Post a new tweet
     - Log out
 - [Calculator](calculator) - JavaScript, HTML, CSS (March 2018) <br/>
-  	Features: sum, rest, multiply, divide, square, square root, negative numbers
+  	Features: add, subtract, multiply, divide, square, square root, negative numbers
