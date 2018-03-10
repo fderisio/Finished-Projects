@@ -7,8 +7,12 @@ function show(num) {
   if (onScreen.length === 10) {
     $('#screen').val(onScreen.join(''));
   }
-  onScreen.push(num);
-  $('#screen').val(onScreen.join(''));
+  if (onScreen.length === 0 && num === '0') {
+    $('#screen').val(0);
+  } else {
+    onScreen.push(num);
+    $('#screen').val(onScreen.join(''));
+  }
 }
 
 function calculate(operator) {
@@ -28,13 +32,15 @@ function calculate(operator) {
       break;
   }
 
-  onScreen = onScreen.join(''); 
+  if (onScreen.length > 0) {
+    onScreen = onScreen.join(''); 
+  }
 
   // when pressing sign after sign
-  if (operator !== "equals" && typeof nums[nums.length-1] === 'string' && typeof onScreen == 'number') {
+  if (operator !== "equals" && typeof nums[nums.length-1] === 'string' && typeof onScreen === 'number') {
     nums.pop();
     nums.push(operator);
-  } else if (operator !== "equals" && nums.length >= 0) {
+  } else if (operator !== "equals" && nums.length >= 0 && onScreen.length > 0) {
     $('#screen').val(onScreen);
     nums.push(parseFloat(onScreen), operator)
     onScreen = [];
@@ -66,8 +72,14 @@ function calculate(operator) {
     $('#screen').val(result);
     lastOperation = [nums[nums.length-2], nums[nums.length-1]];
     onScreen = [result];
-    nums = [];
     result = 0;
+
+    // show 0 if no number has been entered
+    if (nums.length === 0) {
+      $('#screen').val(result);
+      onScreen = []
+    }
+    nums = []; // clean all numbers from last calculation
   }
 
 }
